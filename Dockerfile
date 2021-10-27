@@ -1,4 +1,4 @@
-FROM node:17.0
+FROM node:16.3
 
 ENV LANG=C.UTF-8
 ENV APP=/app
@@ -13,6 +13,5 @@ RUN set -x && \
     yarn cache clean && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
 
 COPY . ${APP}
