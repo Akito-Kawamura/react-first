@@ -1,0 +1,8 @@
+FROM node:16.3
+
+ENV LANG=C.UTF-8
+ENV APP=/app
+RUN mkdir -p ${APP}
+WORKDIR ${APP}
+
+COPY . ${APP}
