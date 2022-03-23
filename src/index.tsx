@@ -6,7 +6,7 @@ import ContainedButtons from './atoms/button';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ContainedButtons />
+    <ContainedButtons text='test' color='primary'/>
   </React.StrictMode>,
   document.getElementById('root')
 );
