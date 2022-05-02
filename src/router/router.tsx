@@ -1,12 +1,16 @@
 import { BrowserRouter, Route } from 'react-router-dom';
-import ContainedButtons from './atoms/button';
+import { Page1 } from '../pages/page1'
+import { NotFound} from '../pages/notFound'
 
-function App() {
+export const Router = () => {
   return (
     <BrowserRouter>
       <h1>Hello React Router</h1>
-      <Route path="/">
-      	<ContainedButtons text='test' color='primary'/>
+      <Route path="/page1">
+        <Page1 />
+      </Route>
+      <Route>
+        <NotFound />
       </Route>
     </BrowserRouter>
   );
