@@ -3,12 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import ContainedButtons from './atoms/button';
-import { Router } from './router/router'
 
 ReactDOM.render(
   <React.StrictMode>
     <ContainedButtons text='test' color='primary'/>
-    <Router></Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
