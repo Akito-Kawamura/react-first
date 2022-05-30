@@ -6,16 +6,18 @@ interface imageProps {
 	src?: string;
 	alt?: string;
 	title?: string;
+	id?: string;
 }
 
 export const Image = ({
 	size = 'medium',
-	src,
+	src='NoImage.jpeg',
 	alt,
 	title,
+	id,
 	...props
       }: imageProps) => {
 	return (
-		<img src={{ src }} alt={{ alt }} title={{ title }} />
+		<img id={ id } src={ src } alt={ alt } title={ title } />
 	);
 };

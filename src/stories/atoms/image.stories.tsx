@@ -17,7 +17,8 @@ export default {
       
       export const templete = Template.bind({});
       templete.args = {
-	src : '../../../public/logo512.png',
+	src : 'https://placehold.jp/150x150.png',
 	alt : 'altText',
-	title : 'react'
+	title : 'react',
+	id : 'id',
       };
