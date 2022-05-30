@@ -1,0 +1,12 @@
+.next/
+build/
+*.html
+*.md
+Dockerfile*
+docker*
+k8s/
+node_modules/
+.storybook/
+circleci/
+public/
+.*
